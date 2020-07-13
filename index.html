@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="welcome"></div>
+        <div class="game-window" style="display: none"></div>
+        <div class="menu">
+            <h1 id="hint" style="display: none;">Click on the map</h1>
+            <h1 id="curr-score" style="display: none;"></h1>
+            <div class="result-input" style="display: none;">
+                <input type="text" id="user" placeholder="Enter Your Name">
+                <div class="buttons1 result-choice">
+                    <button id="submit" class="animated-button1 result-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        APPLY
+                    </button>
+                    <button id="cancel" class="animated-button1 result-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        CANCEL
+                    </button>
+                </div>
+            </div>
+            <div class="score" style="display: none">
+                <h1>LEADERBOARDS</h1>
+                <ol class="top" style="font-size: 30px;">
+                    
+                </ol>
+                <button id="go-back" class="animated-button1 result-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    MAIN MENU
+                </button>
+            </div>
+            
+            
+            <div class="buttons">
+                <button id="start-btn" class="animated-button1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    PLAY
+                </button>
+                <button id="score-btn" class="animated-button1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    SCORE
+                </button>
+            </div>
+        </div>
+    </div>
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

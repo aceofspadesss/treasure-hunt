@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'requiem';
+    src: url(./fonts/Requiem.ttf);
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    background-image: url(./images/UI/bg.jpg);
+    background-size: cover;
+}
+
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    margin-top: 5vh;
+}
+
+.welcome{
+    width: 70%;
+    height: 99%;
+    background-image: url(./images/UI/welcome.jpg);
+    background-repeat: repeat-x repeat-y;
+    border-width: 5.6px;
+    border-style: solid;
+    border-image-source: url(./images/UI/borders.png);
+    border-image-slice: 20;
+    border-image-width: 30px;
+    border-image-repeat: round;
+    border-image-outset: 0;
+    overflow: hidden;
+    position: relative;
+}
+.game-window{
+    width: 70%;
+    height: 99%;
+    background-image: url(./images/UI/fog-texture.jpg);
+    background-repeat: repeat-x repeat-y;
+    border-width: 5.6px;
+    border-style: solid;
+    border-image-source: url(./images/UI/borders.png);
+    border-image-slice: 20;
+    border-image-width: 30px;
+    border-image-repeat: round;
+    border-image-outset: 0;
+    overflow: hidden;
+    position: relative;
+}
+.menu{
+    height: 99%;
+    width: 30%;
+    border-width: 5.6px;
+    border-style: solid;
+    border-image-source: url(./images/UI/borders.png);
+    border-image-slice: 20;
+    border-image-width: 30px;
+    border-image-repeat: repeat;
+    border-image-outset: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./images/UI/parchment.jpg);
+    background-repeat: repeat;
+    font-family: 'requiem';
+}
+
+.buttons{
+    margin-top: 35vh;
+}
+
+#hint{
+    padding-top: 10px;
+}
+
+#results{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+.terrain {
+	-webkit-animation: scale-up-center 1s ease-out both;
+    animation: scale-up-center 1s ease-out both;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+}
+.victory{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+}
+.result-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20vh;
+    margin-left: 10px;
+}
+.buttons1{
+    margin-right: 10px;
+}
+#name{
+    margin-left: 15px;
+}
+input{
+    width: 483px;
+    height: 50px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    margin-bottom: 10px;
+}
+input::placeholder{
+    opacity: 1;
+    font-family: 'requiem';
+    font-size: 20px;
+    color: black;
+}
+input[type="text"]{
+    font-family: 'requiem';
+    font-size: 20px;
+    color: black;
+}
+.score{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
