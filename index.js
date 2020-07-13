@@ -44,8 +44,8 @@ const game = () => {
         $('#curr-score').text('Score: ' + counter)
         $('<div class="terrain">')
             .css({
-                "left": event.pageX - 45 + 'px',
-                "top": event.pageY - 45 + 'px',
+                "left": event.pageX - 50 + 'px',
+                "top": event.pageY - 90 + 'px',
                 })
                 .append($(`<img src="./images/textures/${terrain[Math.round(Math.random() * 2)]}.png" class="terrain"/>`))
                 .appendTo('.game-window');
@@ -53,8 +53,8 @@ const game = () => {
             $('<div class="terrain">')
                 .css({
                     "position": 'absolute',
-                    "left": event.pageX - 30 + 'px',
-                    "top": event.pageY - 30 + 'px',
+                    "left": event.pageX - 35 + 'px',
+                    "top": event.pageY - 75 + 'px',
                     "width": 30 + 'px',
                     "height": 30 + 'px'
                     })
